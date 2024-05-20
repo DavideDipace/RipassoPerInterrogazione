@@ -1,0 +1,9 @@
+<div *ngFor = "let pippo of ciao">
+	{{pippo.nome}}
+	{{pippo.testo}}
+</div>
+<p>{{likes}}</p>
+<button type="button" (click)="like()">Like</button>
+<input type = "text" name = "commenta" #commento><br>
+<button type="button" (click)="commenta">Commento</button>
+<app-comment [commentoz] = "commenti"></app-comment>
